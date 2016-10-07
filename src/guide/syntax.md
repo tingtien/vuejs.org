@@ -38,7 +38,7 @@ Mustache 标签会被相应数据对象的 msg 属性的值替换。每当数据
 
 内容被插入 HTML 字符串--数据绑定将被忽略。谨记不能用 `v-html` 去修改局部模板，因为Vue不是基于字符串的模板引擎。相反，组件是首选作为UI重用和组成的基本单元。
 
-<p class="tip">在网站里，动态渲染任意HTML是非常危险的。因为这样很容易导致 [ XSS攻击 ](https://en.wikipedia.org/wiki/Cross-site_scripting)。仅使用HTML插值可信内容和永不用于用户提交的内容。 </p>
+<p class="tip">在网站里，动态渲染任意HTML是非常危险的。因为这样很容易导致 [ XSS 攻击 ](https://en.wikipedia.org/wiki/Cross-site_scripting)。仅使用HTML插值可信内容和永不用于用户提交的内容。 </p>
 
 ### 属性
 
