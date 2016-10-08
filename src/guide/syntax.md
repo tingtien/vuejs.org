@@ -34,7 +34,8 @@ The double mustaches interprets the data as plain text, not HTML. In order to ou
 
 ``` html
 <div id="app">
-  <div v-html="rawHtml">{{ message }}</div>
+  <textarea v-model="message"></textarea>
+  <div v-html="message"></div>
 </div>
 ```
 
@@ -42,8 +43,7 @@ The double mustaches interprets the data as plain text, not HTML. In order to ou
 new Vue({
   el: '#app',
   data: {
-    message: 'data bindings are ignored',
-    rawHtml: '<strong>Hello Vue.js!</strong>'
+    message: '<a href="#">Hello Vue.js!</a>'
   }
 })
 ```
@@ -52,14 +52,14 @@ new Vue({
 
 {% raw %}
 <div id="app" class="demo">
-  <div v-html="rawHtml">{{ message }}</div>
+  <textarea v-model="message"></textarea>
+  <div v-html="message"></div>
 </div>
 <script>
 new Vue({
   el: '#app',
   data: {
-    message: 'data bindings are ignored',
-    rawHtml: '<strong>Hello Vue.js!</strong>'
+    message: '<a href="#">Hello Vue.js!</a>'
   }
 })
 </script>
